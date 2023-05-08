@@ -1,0 +1,79 @@
+<!--Roberto Fernandes 29/03/2022-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <fieldset style="width:300px">
+            <fieldset>
+                <h3>Dados para login</h3>
+                    <label for="E-mail">Login</label>
+                        <input type="email" id="E-mail" placeholder="E-mail para acesso" required /><p></p>
+                    <label for="pass">Senha</label>
+                        <input type="password" id="pass" placeholder="Senha" required /><br>
+            </fieldset>
+            
+            <fieldset>
+                <h3>Dados pessoais</h3>
+                    <label for="name">Nome</label>
+                        <input type="text" id="name" placeholder="nome" required/><p></p>
+                    <label for="lname">Sobrenome</label>
+                        <input type="text" id="lname" placeholder="sobrenome" required/><p></p>
+
+                    <label for="Sexo">Sexo</label>
+                        <input type="radio" name="Sexo" value="Masculino" id="Masc"required />
+                        <label For="Masc">Masc</label>
+                        <input type="radio" name="Sexo" value="Feminino" id="Femi"required/>
+                        <label For="Femi">Femi</label>
+                        <input type="radio" name="Sexo" value="Outro" id="Outro" required/>
+                        <label For="Outro">Outro</label><p></p>
+
+                    <label for="cpf">CPF</label>
+                        <input type="number" id="cpf" placeholder="000.000.000-00" required/><p></p>
+                    <label for="contt">Telefone</label>
+                        <input type="tel" id="contt" placeholder="(xx)x xxxxxxxx" required/><p></p>
+                    <label for="nasc">Data Nasc</label>
+                        <input type="date" id="nasc" required/><p></p>
+            </fieldset>
+
+            <fieldset>    
+                <h3>Endereço</h3>
+                    <label for="cep">Cep</label>
+                        <input type="number" id="cep" placeholder="Cep" required/><p></p>
+                    <label for="rua">Rua</label>
+                        <input type="text" id="rua" placeholder="Rua" required/><p></p>
+                    <label for="numCasa">Nª casa</label>
+                        <input type="text" id="numCasa" placeholder="Numero da casa" required/><p></p>
+                    <label for="bairro">Bairro</label>
+                        <input type="text" id="bairro" placeholder="Bairro" required/><p></p>
+                    <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" placeholder="Cidade" required /><p></p>
+                    <label for="estado">Estado</label>
+                        <select name="Estados" id="estado" required>
+                            <option value="">--Estados da Região Norte--</option>
+                            <option value="Ac">Acre</option>
+                            <option value="Ap">Amapá</option>
+                            <option value="Am">Amazonas</option>
+                            <option value="Pa">Pará</option>
+                            <option value="Ro">Rondonia</option>
+                            <option value="Rr">Roraima</option>
+                            <option value="To">Tocantins</option>
+                        </select>
+           
+        </fieldset>
+        <div style="text-align:center">
+            <input type="submit" />
+        </div>
+    </form>
+</body>
+
+</html>
